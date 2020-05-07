@@ -642,6 +642,10 @@ namespace nonstd
     }
   };
 
+#ifdef ARDUINO_spresense_ast
+	using nullptr_t = decltype(nullptr);
+#endif
+
   template<class R, class...Args, size_t sz, size_t algn>
   inline bool operator==(const small_task<R(Args...), sz, algn>& __f, nullptr_t)
   { return !static_cast<bool>(__f); }

@@ -18,11 +18,13 @@
 
 #include <stdlib.h>
 #include <basic_definitions>
+#include <math.h>
 
 #ifndef __HEADER_CSTDLIB
 #define __HEADER_CSTDLIB 1
 
 
+#ifndef ARDUINO_spresense_ast
 namespace std{
 	using ::abort;
 	using ::abs;
@@ -65,7 +67,7 @@ namespace std{
 	}
 
 }
-
+#endif
 
 
 #endif

@@ -22,6 +22,7 @@
 #define __HEADER_CSTDIO 1
 
 
+#ifndef ARDUINO_spresense_ast
 namespace std{
 	using ::FILE;
 	using ::fpos_t;
@@ -70,6 +71,7 @@ namespace std{
 	using ::vprintf;
 	using ::vsprintf;
 }
+#endif
 
 
 
